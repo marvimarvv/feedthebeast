@@ -21,7 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="bg-primary-700 text-neutral-950">
-      <body className={climateCrisis.className}>{children}</body>
+      <body className={`${climateCrisis.className} p-space-xs-s`}>
+        {children}
+      </body>
     </html>
   );
 }

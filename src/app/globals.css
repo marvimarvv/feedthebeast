@@ -10,4 +10,24 @@
   .gate-right {
     clip-path: inset(0 0 0 0 round 0 400px 0 0);
   }
+
+  .gate-mask {
+    mask: conic-gradient(
+        from -60deg at bottom,
+        rgba(0, 0, 0, 0),
+        #000 100deg 90deg,
+        rgba(0, 0, 0, 0) 91deg
+      )
+      50% / calc(2 * 20px) 100%;
+  }
+
+  .gate-text-mask {
+    mask: conic-gradient(
+        from -60deg at bottom,
+        rgba(0, 0, 0, 0),
+        #000 1deg 90deg,
+        rgba(0, 0, 0, 0) 91deg
+      )
+      50% / calc(2 * 20px) 80%;
+  }
 }
